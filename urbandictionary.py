@@ -1,10 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
 
-while True:
+while True: 
     try:
         print('URBAN DICTIONARY SEARCH')
-        url_choice =input('Enter a key word : ')
+        url_choice =input('\033[34mEnter a key word : \033[0m')
+        print('')
 
 
         urbansite_ ='https://www.urbandictionary.com/define.php?term=' + url_choice
@@ -28,4 +29,4 @@ while True:
         print('')
         print('--------------------------------------------------------------------------------------------------')
     except:
-        print("Error / Invalid key word / Text doesn't exist")
+        print("\033[31mError / Invalid key word / Text doesn't exist\033[0m")
